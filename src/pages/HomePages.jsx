@@ -2,6 +2,7 @@ import "./HomePages.scss";
 import imgMainPage from "../assets/imagehomepage/mainpages.png";
 import imgAddminPage from "../assets/imagehomepage/adminpage.png";
 import imgQR from "../assets/imagehomepage/qrcode_hotflix.png"
+import { Link } from "react-router-dom";
 
 function HomePages() {
   return (
@@ -19,15 +20,15 @@ function HomePages() {
       </div>
       <section>
         <div className="container-contents">
-          <div className="content-text">
+          <div className="col content-text">
             <h1 className="content-title">Demo Pages</h1>
           </div>
          <div className="mainpage-content">
          <div className="content-mainpage">
-            <a className="link-mainpage" href="#">
+            <Link className="link-mainpage" to="/main">
               <img className="img-mainpage" src={imgMainPage} alt="photo" />
               <span>Main Pages</span>
-            </a>
+            </Link>
           </div>
           <div className="content-mainpage">
             <a className="link-mainpage" href="#">
