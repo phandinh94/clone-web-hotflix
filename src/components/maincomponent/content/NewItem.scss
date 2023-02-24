@@ -1,0 +1,21 @@
+.newitem {
+    width: 100%;
+    .nav-list {
+        margin:0% 9%;
+        font-size: 20px;
+        margin-bottom: 2%;
+        .nav-item:hover{
+            border-bottom: 2px solid orange;
+            color: orange;
+                .nav-link:hover{
+                    color: orange;
+                }
+        }
+        
+    }
+
+    .list-item {
+        margin: 2% 9%;
+    }
+
+}

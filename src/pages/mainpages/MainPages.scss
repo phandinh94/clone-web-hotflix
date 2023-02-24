@@ -1,0 +1,24 @@
+.mainpage{
+    text-align: center;
+    background-color: black;
+    .home{
+        margin-top:4.5%;
+        .homeindex-content{
+            color: white;
+            .homeindex-title-text{
+              font-size: 30px;
+              padding-right: 20%;
+              
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        color: white;
+        .content-title{
+            font-size: 40px;
+            
+
+        }
+    }
+}

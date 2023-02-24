@@ -1,5 +1,9 @@
 .navbar{
-    
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     .home-title{
         color: white;
         b{
@@ -8,6 +12,12 @@
            } 
         }
     }
-
+   #navbarScrollingDropdown{
+    padding-right: 5%;
+    color: white;
+   }
+   .pricing-plan{
+    color: white;
+   }
 }
 

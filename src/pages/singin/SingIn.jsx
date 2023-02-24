@@ -6,10 +6,9 @@ function SingIn() {
  const [password, setPassword]= useState("")
  const [email, setEmail] = useState("")
  const navigate = useNavigate()
-
+const [cookies, setCookies] = useState("")
 
  const dataUser = JSON.parse(localStorage.getItem("user"))
- console.log(dataUser);
     const user = dataUser[0]
     const emailLocal = user.email
     const passwordLocal =user.password
@@ -30,6 +29,9 @@ function SingIn() {
     } else if(email !== emailLocal && password === passwordLocal){
         alert("email wrong")
     } else {
+      localStorage.setItem("user")
+      setCookies("email", emailLocal)
+      setCookies("name", user.name)
         navigate("/main")
     }
  }
