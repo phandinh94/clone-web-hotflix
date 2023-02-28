@@ -19,6 +19,7 @@ function SingUp() {
     } else {
       user.push({ name: nameUser, email: emailUser, password: passwordUser });
       localStorage.setItem("user", JSON.stringify(user));
+      console.log(localStorage.setItem("user", JSON.stringify(user)));
     JSON.parse(localStorage.getItem("user"))
 
 
@@ -63,9 +64,8 @@ function SingUp() {
             />
           </div>
           <div>
-            <input type="checkbox" />{" "}
+            <input type="checkbox" />
             <span>
-              {" "}
               I agree to the <span>Privacy Policy</span>
             </span>
           </div>

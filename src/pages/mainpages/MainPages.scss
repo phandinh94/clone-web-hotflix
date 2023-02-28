@@ -1,16 +1,30 @@
 .mainpage{
+    width: 100%;
     text-align: center;
     background-color: black;
     .home{
-        margin-top:4.5%;
+        width: 100%;
+        
+        .home-top{
+            padding-top: 10%;
+            .text-white{
+            font-size: 30px;
+            }
+        }
         .homeindex-content{
+            width: 100%;
             color: white;
             .homeindex-title-text{
-              font-size: 30px;
+                width: 100%;
+            //   font-size: 0px;
               padding-right: 20%;
               
             }
         }
+        .simple-slide-news{
+            width: 100%;
+        }
+          
     }
     .content{
         width: 100%;
@@ -18,7 +32,37 @@
         .content-title{
             font-size: 40px;
             
-
+        } 
+    }
+    .section-border{
+        padding: 5%;
+        .expected-premirere{
+            .title-view{
+                padding-bottom: 3%;
+                .title{
+                  font-weight:lighter;
+                }
+                .btn-viewall{
+                    background-color: rgb(34,32,40);
+                    margin-right: 20%;
+                    color: white;
+                    border: none;
+                    padding:0% 2%;
+                }
+            }
         }
+       
+        .slick-initialied{
+                .slick-list{
+                    .slick-track{
+                        .slick-slide{
+                            margin-left: 2%;
+                        }
+                    }
+                }
+        }
+        
     }
 }
+
+

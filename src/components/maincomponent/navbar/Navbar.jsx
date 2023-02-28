@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 
 function NavbarMainPages() {
     const dataUser = JSON.parse(localStorage.getItem("user"))
+console.log(dataUser);
     const user = dataUser[0]
     const nameLocal = user.name
   return (
@@ -102,7 +103,9 @@ function NavbarMainPages() {
               Russian
               </NavDropdown.Item>
             </NavDropdown>
-            <Button className="me-3 col-3" variant="outline-warning">{user ? nameLocal : <Link to="/singin" >SING IN</Link> }</Button>
+            <Button className="me-3 col-3" variant="outline-warning">
+              {user ? nameLocal : <Link to="/singin" >SING IN</Link> }
+              </Button>
           </Form>
         </Navbar.Collapse>
       </Container>

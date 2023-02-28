@@ -1,13 +1,14 @@
 .newitem {
     width: 100%;
     .nav-list {
-        margin:0% 9%;
+        margin:0% 5%;
         font-size: 20px;
         margin-bottom: 2%;
         .nav-item:hover{
-            border-bottom: 2px solid orange;
-            color: orange;
-                .nav-link:hover{
+            // border-bottom: 2px solid orange;
+
+                .nav-link{
+                    border-bottom: 2px solid orange;
                     color: orange;
                 }
         }
@@ -15,7 +16,7 @@
     }
 
     .list-item {
-        margin: 2% 9%;
+        margin: 0% 5%;
     }
 
 }

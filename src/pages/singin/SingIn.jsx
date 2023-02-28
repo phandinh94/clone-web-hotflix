@@ -10,6 +10,7 @@ const [cookies, setCookies] = useState("")
 
  const dataUser = JSON.parse(localStorage.getItem("user"))
     const user = dataUser[0]
+    console.log(user);
     const emailLocal = user.email
     const passwordLocal =user.password
 
@@ -29,9 +30,7 @@ const [cookies, setCookies] = useState("")
     } else if(email !== emailLocal && password === passwordLocal){
         alert("email wrong")
     } else {
-      localStorage.setItem("user")
-      setCookies("email", emailLocal)
-      setCookies("name", user.name)
+      localStorage.getItem("user")
         navigate("/main")
     }
  }

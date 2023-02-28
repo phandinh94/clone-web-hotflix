@@ -1,5 +1,4 @@
-
-.home{
+.view-all{
     width: 100%;
     .simple-slide-news{
         .slick-initialized{
@@ -7,18 +6,11 @@
             margin:0% 5%;
             .slick-list{
                 .slick-track{
-                    width: 100%;  
-                    border: none;                  
+                    width: 100%;                    
                     .slick-slide{
                         padding: 0.2%;
                     }
                 }
-            }
-            .slick-prev{
-                // position: absolute;
-            }
-            .slick-next{
-                 // position: absolute;
             }
         }
     }
